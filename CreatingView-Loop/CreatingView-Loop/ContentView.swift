@@ -12,11 +12,16 @@ struct ContentView: View {
     @State private var selectedUser = "Jim"
     
     var body: some View {
-        Picker("Select a user", selection: $selectedUser) {
-            ForEach(0..<users.count) {
-                Text(self.users[$0])
+        VStack {
+            
+            Picker("Select a user", selection: $selectedUser) {
+                ForEach(0..<users.count) {
+                    Text(self.users[$0])
+                }
             }
+            Text("Seleceted Student: #\(selectedUser)")
         }
+        
     }
 }
 
