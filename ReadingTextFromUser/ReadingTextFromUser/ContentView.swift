@@ -15,6 +15,10 @@ struct ContentView: View {
     
     let tipPercentages = [10, 15, 20, 25, 0]
     
+    var totalPerPerson: Double {
+        return 0
+    }
+    
     var body: some View {
         NavigationView {
             Form {
