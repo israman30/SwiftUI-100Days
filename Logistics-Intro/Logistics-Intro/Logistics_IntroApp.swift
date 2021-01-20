@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Logistics_IntroApp: App {
+    let game = ViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: game)
         }
     }
 }
