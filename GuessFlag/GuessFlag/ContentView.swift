@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Button(action: {
-            
+            // action
         }, label: {
             HStack {
                 Image(systemName: "pencil")
@@ -20,6 +20,7 @@ struct ContentView: View {
             .foregroundColor(.white)
             .padding()
             .background(Color.blue)
+            .cornerRadius(10)
         })
     }
 }
