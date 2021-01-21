@@ -9,9 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            AngularGradient(gradient: Gradient(colors: [.red, .blue, .green, .gray, .purple]), center: .center)
-        }
+        Button(action: {
+            
+        }, label: {
+            HStack {
+                Image(systemName: "pencil")
+                Text("Tap me")
+            }
+            .font(.title)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.blue)
+        })
     }
 }
 
